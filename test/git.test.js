@@ -18,7 +18,6 @@ describe("Testing add()", function(){
 
         expect(output).to.equal('Successfully added as index file/s.');
     });
-
     it('Should failed with missing path_file "views/error404.html"', function(){
         let wd = new WorkingDirectory();
         wd.addFile("index.html", "views", "<html>Hello</html>");
@@ -62,5 +61,6 @@ describe("Testing add()", function(){
 
         expect(output_add).to.equal('Successfully added as index file/s.');
         expect(output_status).to.equal('You have 1 change/s.\n.github/workflows/actions.yml');
+        //DONE!!!!
     });
 })
